@@ -45,25 +45,40 @@ Power BI Dashboard
 
 ## Some Example Metrics
 **Daily Asset Return** measures the percent change in asset price from one trading day to the next
-$$ r_t = \frac{P_t}{P_{t-1}} - 1 $$
+<br><br>
+$$r_t = \frac{P_t}{P_{t-1}} - 1$$
+<br><br>
 **Portfolio Return** measures the weighted return of the portfolio across all assets
-$$ R_{p,t} = \sum_{i=1}^{n} w_i r_i $$
+<br><br>
+$$R_{p,t} = \sum_{i=1}^{n} w_i r_i$$
+<br><br>
 **Annualized Return** measures the compounded yearly growth rate of the portfolio (assuming 252 trading days)
-$$ \text{Annualized Return} =
+<br><br>
+$$\text{Annualized Return} =
     \left(
     \frac{V_{\text{end}}}{V_{\text{start}}}
-    \right)^{\frac{252}{n}} - 1 $$
+    \right)^{\frac{252}{n}} - 1$$
+<br><br>
 **Annualized Volatility** measures the annualized standard deviation of portfolio returns
+<br><br>
 $$\sigma_{\text{annual}} =
     \sigma_{\text{daily}} \times \sqrt{252}$$
+<br><br>
 **Rolling Volatility** measures how portfolio risk evolves over time using a rolling window
+<br><br>
 $$\text{Rolling Volatility} =
 \text{STD}(r_t)_{252} \times \sqrt{252}$$
+<br><br>
 **Beta (β)** measures portfolio sensitivity relative to the benchmark
+<br><br>
 $$\beta = \frac{\text{Cov}(R_p, R_b)}{\text{Var}(R_b)}$$
+<br><br>
 **Alpha (α)** measures portfolio return in excess of expected benchmark-adjusted return
-$$ \alpha = R_p -\left[R_f + \beta(R_b - R_f)\right]$$
+<br><br>
+$$\alpha = R_p -\left[R_f + \beta(R_b - R_f)\right]$$
+<br><br>
 **Sharpe Ratio** measures risk-adjusted return relative to volatility
+<br><br>
 $$\text{Sharpe Ratio} =\frac{R_p - R_f}{\sigma_p}$$
 
 ## Analytics Solution Preview
@@ -100,6 +115,8 @@ $$\text{Sharpe Ratio} =\frac{R_p - R_f}{\sigma_p}$$
 <br><br>
 
 **Returns Calculations File**
+<br>
+*This is where the Return Metrics are computed*
 <br><br>
 ![Returns Calc](./screenshots/Return1.png)
 <br>
@@ -109,6 +126,8 @@ $$\text{Sharpe Ratio} =\frac{R_p - R_f}{\sigma_p}$$
 <br><br>
 
 **Risk Metrics Calculation File**
+<br>
+*This is where the Risk Metrics are computed*
 <br><br>
 ![Risk Metrics Calc](./screenshots/Risk1.png)
 <br>
@@ -118,6 +137,8 @@ $$\text{Sharpe Ratio} =\frac{R_p - R_f}{\sigma_p}$$
 <br><br>
 
 **SQL Queries and Exportation**
+<br>
+*This is where the SQL Queries are performed for the relevant analysis*
 <br><br>
 ![SQL Files](./screenshots/query1.png)
 <br>
