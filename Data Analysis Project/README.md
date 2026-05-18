@@ -138,7 +138,7 @@ $$\text{Sharpe Ratio} =\frac{R_p - R_f}{\sigma_p}$$
 
 **SQL Queries and Exportation**
 <br>
-*This is where the SQL Queries are performed for the relevant analysis*
+*This is where the SQL Queries are performed for the relevant analysis and exported*
 <br><br>
 ![SQL Files](./screenshots/query1.png)
 <br>
